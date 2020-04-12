@@ -1,29 +1,24 @@
 // https://www.codewars.com/kata/547274e24481cfc469000416/train/javascript
 
 
-class Human {
-    constructor(name) {
-        this.name = name;
-    }
-
-class Man extends Human {
-    name = `Adam`;
-};
-class Woman extends Human {
-    name = `Eve`;
-};
-}
 class God {
-    // constructor() { }
-
     static create() {
-        const Humans = [new Man(), new Woman(`Eve`)];
-        return Humans;
+        return [new Man, new Woman];
     }
 }
+class Human { }
+class Man extends Human {
+    const name=`Adam`;
+    return name;
+ }
+class Woman extends Human {
+    const name=`Eve`;
+    return name;
+ }
 
 
 let humans = God.create()
-console.log(Humans[0], 1];
-console.log(Humans[1], 2];
+console.log(humans[0]);
+console.log(humans[1]);
+console.log(typeof (humans), humans.length);
 //console.log(Humans[0] instanceof Man + ` true`); // 'Expected Adam to be a Man');
