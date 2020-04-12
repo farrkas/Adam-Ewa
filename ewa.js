@@ -7,14 +7,8 @@ class God {
     }
 }
 class Human { }
-class Man extends Human {
-    const name=`Adam`;
-    return name;
- }
-class Woman extends Human {
-    const name=`Eve`;
-    return name;
- }
+class Man extends Human { }
+class Woman extends Human { }
 
 
 let humans = God.create()
