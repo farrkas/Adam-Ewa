@@ -15,4 +15,3 @@ let humans = God.create()
 console.log(humans[0]);
 console.log(humans[1]);
 console.log(typeof (humans), humans.length);
-//console.log(Humans[0] instanceof Man + ` true`); // 'Expected Adam to be a Man');
